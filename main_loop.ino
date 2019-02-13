@@ -147,6 +147,7 @@ int ground = LOW;
 int drain = 100;
 int resSteps = 100000 / 128;
 
+//Osc class adapted from adafruit multi-LED example
 class Oscillator
 {
   // Class Member Variables initialized at startup
@@ -165,7 +166,7 @@ class Oscillator
   int active;      // true if note currently playing
   int period;     // pitch that osc is currently playing
    
-  // Constructor - creates a Flasher and initializes the member variables and state
+  // Constructor
   public:
   Oscillator(int tPin, int cPin, int abSide)
   {
